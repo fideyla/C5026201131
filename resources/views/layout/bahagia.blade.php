@@ -390,9 +390,9 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-primary">
                 </button>
             </div>
-            <div class="img bg-wrap text-center py-4" style="background-image: url(images/background.jpeg);">
+            <div class="img bg-wrap text-center py-4" style="background-image: url(/images/background.jpeg);">
                 <div class="user-logo">
-                    <div class="img" style="background-image: url(images/fidela.jpg);">
+                    <div class="img" style="background-image: url(/images/fidela.jpg);">
                     </div>
                     <h2>Fidela Nathania <br> 5026201131 </h2>
                 </div>

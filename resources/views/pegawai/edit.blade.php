@@ -1,7 +1,7 @@
 @extends('layout.bahagia')
 
-@section('title', 'Mengedit Data Pegawai')
-@section('judulhalaman', 'Edit Pegawai')
+@section('title', 'Edit Data Pegawai')
+@section('judulhalaman', 'Edit Data Pegawai')
 
 @section('konten')
 <div id="kotak">
