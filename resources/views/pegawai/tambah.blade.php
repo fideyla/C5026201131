@@ -1,26 +1,73 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('layout.bahagia')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+@section('title', 'Data Pegawai')
+@section('judulhalaman', 'Daftar Data Pegawai')
 
-	<a href="/pegawai"> Kembali</a>
+@section('konten')
 
-	<br/>
-	<br/>
+<a href="/pegawai"> Kembali</a>
 
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
+<br />
+<br />
 
-</body>
-</html>
+<form action="/pegawai/store" method="post" class="table-responsive">
+    {{ csrf_field() }}
+    <table class="table table-borderless">
+        <tr>
+            <td>
+                <label for="inputnama">Nama</label>
+            </td>
+            <td>
+                <label>:</label>
+            </td>
+            <td>
+                <input class="container form-control" type="text" name="nama" id="inputnama" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="inputjab">Jabatan</label>
+            </td>
+            <td>
+                <label>:</label>
+            </td>
+            <td>
+                <input class="container form-control" type="text" name="jabatan" id="inputjab" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="inputumur">Umur</label>
+            </td>
+            <td>
+                <label>:</label>
+            </td>
+            <td>
+                <input class="container form-control" type="text" name="umur" id="inputumur" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="inputalamat">Alamat</label>
+            </td>
+            <td>
+                <label>:</label>
+            </td>
+            <td>
+                <textarea class="container form-control" name="alamat" id="inputalamat" required="required"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                <button type="submit" class="btn btn-primary">Simpan Data</button>
+            </td>
+        </tr>
+    </table>
+</form>
+@endsection
