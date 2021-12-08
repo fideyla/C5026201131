@@ -37,7 +37,7 @@
                 </td>
                 <td>
                     <div class='input-group' id='datetimepicker1' data-td-target-input='nearest' data-td-target-toggle='nearest'>
-                        <input id='datetimepicker1Input' type='text' class='form-control' name="tanggal" data-td-target='#datetimepicker1' required />
+                        <input id='datetimepicker1Input' type='text' class='form-control' value="{{ $a->Tanggal }}" name="tanggal" data-td-target='#datetimepicker1' required />
                         <span class='input-group-text' data-td-target='#datetimepicker1' data-td-toggle='datetimepicker'>
                             <span class='fas fa-calendar'></span>
                     </div>
