@@ -26,11 +26,25 @@
             color: gray;
         }
 
+        #kotak {
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-right: 50px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            border: solid #523A28 2px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 3px #D0B49F;
+            background-color: white;
+        }
+
         a {
             -webkit-transition: .3s all ease;
             -o-transition: .3s all ease;
             transition: .3s all ease;
             color: #2f89fc;
+            text-decoration: none !important;
         }
 
         a:hover,
@@ -55,8 +69,41 @@
             box-shadow: none !important;
         }
 
-        th {
-            background: #A47551;
+        #pegawai,
+        #absen {
+            border-collapse: collapse;
+            border: 1px solid #523A28;
+            text-align: center;
+            width: 100%;
+        }
+
+        #pegawai td,
+        #pegawai th,
+        #absen td,
+        #absen th {
+            padding: 8px;
+        }
+
+        #pegawai tr:nth-child(odd) {
+            background-color: #E4D4C8;
+        }
+
+        #absen tr:nth-child(odd) {
+            background-color: #E4D4C8;
+        }
+
+        #pegawai tr:hover,
+        #absen tr:hover {
+            background-color: #D0B49F;
+        }
+
+        #pegawai th,
+        #absen th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #A47551;
+            color: white;
         }
 
         span {
@@ -64,12 +111,10 @@
         }
 
         h1,
-        h2,
         h3,
         h4,
         h5,
         .h1,
-        .h2,
         .h3,
         .h4,
         .h5 {
@@ -77,6 +122,14 @@
             font-weight: 400;
             font-family: "Poppins", Arial, sans-serif;
             color: #000;
+        }
+
+        h2,
+        .h2 {
+            line-height: 1.5;
+            font-weight: 400;
+            font-family: "Poppins", Arial, sans-serif;
+            color: white;
         }
 
         .img {
@@ -268,14 +321,27 @@
             position: relative;
         }
 
-        .dropdown-toggle::after {
+        select {
+            outline: 0;
+            background: white;
+            width: 100%;
+            height: 100%;
+            color: black;
+            cursor: pointer;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            font-size: 12pt;
+        }
+
+        .select {
+            position: relative;
             display: block;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            width: 15em;
+            height: 2em;
+            line-height: 3;
+            overflow: hidden;
+            border-radius: .25em;
+            padding-bottom: 10px;
         }
 
         @media (max-width: 991.98px) {
@@ -305,7 +371,7 @@
         }
 
         footer {
-            position:absolute;
+            position: absolute;
             left: 0;
             bottom: 0;
             width: 200px;
@@ -326,32 +392,31 @@
             </div>
             <div class="img bg-wrap text-center py-4" style="background-image: url(images/background.jpeg);">
                 <div class="user-logo">
-                    <div class="img" style="background-image: url(images/fidela.jpg);"></div>
-                    <h3>Fidela Nathania <br> 5026201131 </h3>
+                    <div class="img" style="background-image: url(images/fidela.jpg);">
+                    </div>
+                    <h2>Fidela Nathania <br> 5026201131 </h2>
                 </div>
             </div>
             <ul class="list-unstyled components mb-5">
                 <li class="active">
-                    <a href="/"><span class="fa fa-home mr-3"></span> Home</a>
+                    <a href="/"><span class="fa fa-home mr-3"></span>&nbsp Home</a>
                 </li>
                 <li>
                     <a href="/pegawai"><i class="fas fa-users"></i>
-                        <span class="fa fa-pegawai mr-3"></span>
-                        Data Pegawai
+                        <span class="fa fa-pegawai mr-3"></span> Data Pegawai
                     </a>
                 </li>
                 <li>
                     <a href="/absen"><i class="fas fa-clipboard-list"></i>
-                        <span class="fa fa-absen mr-3"></span>
-                        Data Absen
+                        <span class="fa fa-absen mr-3"></span>&nbsp Data Absen
                     </a>
                 </li>
                 <li>
-                    <a href="#"><span class="fa fa-trophy mr-3"></span> Praktikum</a>
+                    <a href="#"><span class="fa fa-trophy mr-3"></span>&nbsp Praktikum</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-stopwatch"></i>
-                        <span class="fa fa-waktu mr-3"></span> Minggu Depan</a>
+                        <span class="fa fa-waktu mr-3"></span>&nbsp Minggu Depan</a>
                 </li>
             </ul>
 
