@@ -21,7 +21,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="kode" id="kodemasker" required>
+                    <input class="container form-control" type="number" name="kode" id="kode" required>
                 </td>
             </tr>
             <tr>
@@ -32,7 +32,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <textarea class="container form-control" type="text" name="merk" id="merkmasker" required></textarea>
+                    <textarea class="container form-control" type="text" name="merk" id="merk" required></textarea>
                 </td>
             </tr>
             <tr>
@@ -43,7 +43,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="stock" id="stockmasker" required>
+                    <input class="container form-control" type="number" name="stock" id="stock" required>
                 </td>
             </tr>
             <tr>
@@ -54,12 +54,12 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input type="radio" id="tersedia" name="tersedia" value="Y" checked="checked">
+                    <input type="radio" id="opsi" name="opsi" value="Y" checked="checked">
                     <label for="tersedia">
                         Tersedia
                     </label>
                     <br>
-                    <input type="radio" id="tidak" name="tersedia" value="T">
+                    <input type="radio" id="opsi" name="opsi" value="T">
                     <label for="tidak">
                         Tidak Tersedia
                     </label>

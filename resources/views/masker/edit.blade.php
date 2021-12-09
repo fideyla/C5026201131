@@ -5,7 +5,6 @@
 
 @section('konten')
 <div id="kotak">
-
     <a href="/masker"> Kembali</a>
 
     <br />
@@ -18,13 +17,13 @@
         <table class="table table-borderless">
             <tr>
                 <td>
-                    <label for=inputkode">Kode</label>
+                    <label for="inputkode">Kode</label>
                 </td>
                 <td>
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="kode" value="{{ $m->kodemasker }}" id="kodemasker" required>
+                    <input class="container form-control" type="number" name="kode" value="{{ $m->kodemasker }}" id="kode" required>
                 </td>
             </tr>
             <tr>
@@ -35,7 +34,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <textarea class="container form-control" name="merk" id="merkmasker" required>{{ $m->merkmasker }}</textarea>
+                    <textarea class="container form-control" name="merk" id="merk" required>{{ $m->merkmasker }}</textarea>
                 </td>
             </tr>
             <tr>
@@ -46,7 +45,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="stock" value="{{ $m->stockmasker }}" id="stockmasker" required>
+                    <input class="container form-control" type="number" name="stock" value="{{ $m->stockmasker }}" id="stock" required>
                 </td>
             </tr>
             <tr>
@@ -57,12 +56,12 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input type="radio" id="tersedia" name="tersedia" value="Y" @if ($m->tersedia === "Y" ) checked="checked" @endif>
+                    <input type="radio" id="opsi" name="opsi" value="Y" @if ($m->tersedia === "Y" ) checked="checked" @endif>
                     <label for="tersedia">
                         Tersedia
                     </label>
                     <br>
-                    <input type="radio" id="tidak" name="tersedia" value="T" @if ($m->tersedia === "T" ) checked="checked" @endif>
+                    <input type="radio" id="opsi" name="opsi" value="T" @if ($m->tersedia === "T" ) checked="checked" @endif>
                     <label for="tidak">
                         Tidak Tersedia
                     </label>
