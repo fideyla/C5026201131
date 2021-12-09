@@ -32,6 +32,8 @@ Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
+Route::get('/pegawai/cari','PegawaiController@cari');
 
 //route CRUD absen
 Route::get('/absen','AbsenController@indexabsen');
@@ -48,3 +50,5 @@ Route::post('/masker/store','MaskerController@store');
 Route::get('/masker/edit/{id}','MaskerController@edit');
 Route::post('/masker/update','MaskerController@update');
 Route::get('/masker/hapus/{id}','MaskerController@hapus');
+Route::get('/masker/view/{id}','MaskerController@detail');
+Route::get('/masker/cari','MaskerController@cari');

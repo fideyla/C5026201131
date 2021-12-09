@@ -10,6 +10,13 @@
     <br />
     <br />
 
+    <div class="container" align="center">
+        <form action="/masker/cari" method="GET">
+            <input type="text" class="form-control" name="cari" placeholder="Cari masker berdasarkan kode atau merk .." value="{{ old('cari') }}">
+            <input type="submit" class="btn btn-default" value="CARI">
+        </form>
+    </div>
+
     <table id="masker" class="table table-hover table-bordered align-middle">
         <tr>
             <th>Kode</th>
@@ -25,6 +32,8 @@
             <td>{{ $m->stockmasker }}</td>
             <td>{{ $m->tersedia }}</td>
             <td>
+                <a class="btn btn-success" href="/masker/view/{{ $m->kodemasker }}">View Detail</a>
+                |
                 <a class="btn btn-success" href="/masker/edit/{{ $m->kodemasker }}">Edit</a>
                 |
                 <a class="btn btn-danger" href="/masker/hapus/{{ $m->kodemasker }}">Hapus</a>
@@ -50,6 +59,7 @@
                 <td>Tidak Tersedia</td>
             </tr>
         </table>
+        {{ $masker->links() }}
     </div>
 </div>
 @endsection
