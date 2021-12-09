@@ -21,6 +21,7 @@ Route::get('praktikum2', function () {
     return view('praktikum2');
 });
 Route::get('ETS', 'viewController@showETS');
+Route::get('masker/index', 'viewController@showpraktikum3');
 Route::get('tugasPHP', 'viewController@showtugasPHP');
 Route::post('fungsiPHP', 'viewController@showfungsiPHP');
 
@@ -40,3 +41,10 @@ Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
 
+//route CRUD masker
+Route::get('/masker','MaskerController@index');
+Route::get('/masker/tambah','MaskerController@tambah');
+Route::post('/masker/store','MaskerController@store');
+Route::get('/masker/edit/{id}','MaskerController@edit');
+Route::post('/masker/update','MaskerController@update');
+Route::get('/masker/hapus/{id}','MaskerController@hapus');

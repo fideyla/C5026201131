@@ -15,4 +15,7 @@ class viewController extends Controller
     function showfungsiPHP() {
         return view('fungsiPHP');
     }
+    function showpraktikum3() {
+        return view('masker/index');
+    }
 }

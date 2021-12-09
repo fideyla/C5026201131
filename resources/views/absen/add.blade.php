@@ -47,7 +47,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input type="radio" id="hadir" name="status" value="H">
+                    <input type="radio" id="hadir" name="status" value="H" checked="checked">
                     <label for="hadir">
                         Hadir
                     </label>
@@ -57,7 +57,7 @@
                         Izin
                     </label>
                     <br>
-                    <input type="radio" id="css" name="status" value="S" checked="checked">
+                    <input type="radio" id="css" name="status" value="S">
                     <label for="css">
                         Sakit
                     </label>

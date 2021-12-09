@@ -69,18 +69,15 @@
             box-shadow: none !important;
         }
 
-        #pegawai,
-        #absen {
+        #pegawai, #absen, #masker {
             border-collapse: collapse;
             border: 1px solid #523A28;
             text-align: center;
             width: 100%;
         }
 
-        #pegawai td,
-        #pegawai th,
-        #absen td,
-        #absen th {
+        #pegawai td, #pegawai th, #absen td,
+        #absen th, #masker td, #masker th {
             padding: 8px;
         }
 
@@ -92,13 +89,17 @@
             background-color: #E4D4C8;
         }
 
+        #masker tr:nth-child(odd) {
+            background-color: #E4D4C8;
+        }
+
         #pegawai tr:hover,
-        #absen tr:hover {
+        #absen tr:hover, #masker tr:hover {
             background-color: #D0B49F;
         }
 
         #pegawai th,
-        #absen th {
+        #absen th, #masker th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: center;
@@ -412,7 +413,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><span class="fa fa-trophy mr-3"></span>&nbsp Praktikum</a>
+                    <a href="/masker"><span class="fa fa-trophy mr-3"></span>&nbsp Praktikum</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-stopwatch"></i>
