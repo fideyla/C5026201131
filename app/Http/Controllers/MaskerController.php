@@ -12,7 +12,7 @@ class MaskerController extends Controller
     {
         // mengambil data dari table masker
         // $masker = DB::table('masker')->get();
-        $masker = DB::table('masker')->paginate(3);
+        $masker = DB::table('masker')->paginate(5);
 
         // mengirim data masker ke view index
         return view('masker.index', ['masker' => $masker]);
@@ -25,8 +25,7 @@ class MaskerController extends Controller
 
         // mengambil data dari table masker sesuai pencarian data
         $masker = DB::table('masker')
-            ->where('kodemasker', 'like', "%" . $cari . "%")
-            ->orWhere('merkmasker', 'like', "%" . $cari . "%")
+            ->where('merkmasker', 'like', "%" . $cari . "%")
             ->paginate();
 
         // mengirim data masker ke view index

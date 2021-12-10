@@ -1,7 +1,7 @@
 @extends('layout.bahagia')
 
-@section('title', 'Edit Data Masker')
-@section('judulhalaman', 'Edit Data Masker')
+@section('title', 'Detail Masker')
+@section('judulhalaman', 'Detail Data Masker')
 
 @section('konten')
 <div id="kotak">
@@ -23,7 +23,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="kode" value="{{ $m->kodemasker }}" id="kode" required>
+                    <div class="container form-control"> {{ $m->kodemasker }} </div>
                 </td>
             </tr>
             <tr>
@@ -34,7 +34,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <textarea class="container form-control" name="merk" id="merk" required>{{ $m->merkmasker }}</textarea>
+                    <div class="container form-control"> {{ $m->merkmasker }} </div>
                 </td>
             </tr>
             <tr>
@@ -45,7 +45,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" type="number" name="stock" value="{{ $m->stockmasker }}" id="stock" required>
+                    <div class="container form-control"> {{ $m->stockmasker }} </div>
                 </td>
             </tr>
             <tr>
@@ -67,19 +67,11 @@
                     </label>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
-                    <button type="submit" class="btn btn-primary">Simpan Data</button>
-                </td>
-            </tr>
         </table>
     </form>
+    <script>
+        $(':radio:not(:checked)').attr('disabled', true);
+    </script>
 </div>
 @endforeach
 @endsection

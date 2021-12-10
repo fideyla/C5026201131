@@ -1,7 +1,7 @@
 @extends('layout.bahagia')
 
-@section('title', 'Edit Data Pegawai')
-@section('judulhalaman', 'Edit Data Pegawai')
+@section('title', 'Detail Data Pegawai')
+@section('judulhalaman', 'Detail Data Pegawai')
 
 @section('konten')
 <div id="kotak">
@@ -22,7 +22,7 @@
                 <label>:</label>
             </td>
             <td>
-            {{ $p->pegawai_nama }}
+                <div class="container form-control">  {{ $p->pegawai_nama }} </div>
             </td>
         </tr>
         <tr>
@@ -33,7 +33,7 @@
                 <label>:</label>
             </td>
             <td>
-                {{ $p->pegawai_jabatan }}
+                <div class="container form-control" > {{ $p->pegawai_jabatan }} </div>
             </td>
         </tr>
         <tr>
@@ -44,7 +44,7 @@
                 <label>:</label>
             </td>
             <td>
-                {{ $p->pegawai_umur }}
+                <div class="container form-control"> {{ $p->pegawai_umur }} </div>
             </td>
         </tr>
         <tr>
@@ -55,7 +55,7 @@
                 <label>:</label>
             </td>
             <td>
-                {{ $p->pegawai_alamat }}
+                <div class="container form-control"> {{ $p->pegawai_alamat }} </div>
             </td>
         </tr>
     </table>

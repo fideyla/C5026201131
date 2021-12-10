@@ -69,37 +69,33 @@
             box-shadow: none !important;
         }
 
-        #pegawai, #absen, #masker {
+        #pegawai,
+        #absen,
+        #masker {
             border-collapse: collapse;
             border: 1px solid #523A28;
             text-align: center;
             width: 100%;
         }
 
-        #pegawai td, #pegawai th, #absen td,
-        #absen th, #masker td, #masker th {
+        #pegawai td,
+        #pegawai th,
+        #absen td,
+        #absen th,
+        #masker td,
+        #masker th {
             padding: 8px;
         }
 
-        #pegawai tr:nth-child(odd) {
-            background-color: #E4D4C8;
-        }
-
-        #absen tr:nth-child(odd) {
-            background-color: #E4D4C8;
-        }
-
-        #masker tr:nth-child(odd) {
-            background-color: #E4D4C8;
-        }
-
         #pegawai tr:hover,
-        #absen tr:hover, #masker tr:hover {
-            background-color: #D0B49F;
+        #absen tr:hover,
+        #masker tr:hover {
+            background-color: #F6DDCC;
         }
 
         #pegawai th,
-        #absen th, #masker th {
+        #absen th,
+        #masker th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: center;
@@ -166,13 +162,13 @@
             margin-right: -50px;
         }
 
-        #sidebar.active .btn.btn-primary:before {
+        #sidebar.active .btn.btn-1:before {
             content: "\f053";
             font-family: "FontAwesome";
             right: 2px !important;
         }
 
-        #sidebar.active .btn.btn-primary:after {
+        #sidebar.active .btn.btn-1:after {
             display: none;
         }
 
@@ -262,7 +258,7 @@
             }
         }
 
-        #sidebar .custom-menu .btn.btn-primary {
+        #sidebar .custom-menu .btn.btn-1 {
             background: #A47551;
             border-color: transparent;
             position: relative;
@@ -271,8 +267,8 @@
             height: 30px;
         }
 
-        #sidebar .custom-menu .btn.btn-primary:after,
-        #sidebar .custom-menu .btn.btn-primary:before {
+        #sidebar .custom-menu .btn.btn-1:after,
+        #sidebar .custom-menu .btn.btn-1:before {
             position: absolute;
             top: 2px;
             left: 0;
@@ -282,7 +278,7 @@
             color: #fff;
         }
 
-        #sidebar .custom-menu .btn.btn-primary:after {
+        #sidebar .custom-menu .btn.btn-1:after {
             content: "\f054";
             left: 2px;
         }
@@ -360,15 +356,46 @@
             transition: all 0.3s;
         }
 
-        .btn.btn-primary {
-            background: #A47551;
-            border-color: #A47551;
+        .btn.btn-1 {
+            background: #92705E;
+            border-color: #92705E;
+            color: white;
         }
 
-        .btn.btn-primary:hover,
-        .btn.btn-primary:focus {
-            background: #D0AB99 !important;
-            border-color: #D0AB99 !important;
+        .btn.btn-1:hover,
+        .btn.btn-1:focus {
+            background: #C4A289 !important;
+            border-color: #C4A289 !important;
+        }
+
+        .btn.btn-2 {
+            background: #ebb684;
+            border-color: #ebb684;
+            color: white;
+        }
+
+        .btn.btn-2:hover,
+        .btn.btn-2:focus {
+            background: #f2d0b0 !important;
+            border-color: #f2d0b0 !important;
+        }
+
+        #search-box {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 15px 15px 15px 25px;
+            font-size: 16pt;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #92705E;
+            background-clip: padding-box;
+            border: 2px solid black;
+            border-radius: 0.25rem;
+        }
+
+        .input-group-btn.input-space {
+            padding-left: 15px;
         }
 
         footer {
@@ -388,7 +415,7 @@
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-1">
                 </button>
             </div>
             <div class="img bg-wrap text-center py-4" style="background-image: url(/images/background.jpeg);">
@@ -403,21 +430,22 @@
                     <a href="/"><span class="fa fa-home mr-3"></span>&nbsp Home</a>
                 </li>
                 <li>
-                    <a href="/pegawai"><i class="fas fa-users"></i>
-                        <span class="fa fa-pegawai mr-3"></span> Data Pegawai
+                    <a href="/pegawai"><i class="fas fa-users mr-3"></i>
+                        Data Pegawai
                     </a>
                 </li>
                 <li>
-                    <a href="/absen"><i class="fas fa-clipboard-list"></i>
-                        <span class="fa fa-absen mr-3"></span>&nbsp Data Absen
+                    <a href="/absen"><i class="fas fa-clipboard-list mr-3"></i>
+                        &nbsp Data Absen
                     </a>
                 </li>
                 <li>
-                    <a href="/masker"><span class="fa fa-trophy mr-3"></span>&nbsp Praktikum</a>
+                    <a href="/masker"><i class="fas fa-notes-medical mr-3"></i>
+                        &nbsp Data Masker</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-stopwatch"></i>
-                        <span class="fa fa-waktu mr-3"></span>&nbsp Minggu Depan</a>
+                    <a href="#"><i class="fas fa-stopwatch mr-3"></i>
+                        </span>&nbsp Minggu Depan</a>
                 </li>
             </ul>
 

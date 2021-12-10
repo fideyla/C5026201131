@@ -10,9 +10,9 @@
     <br />
     <br />
 
-    <table id="absen" class="table table-striped table-hover table-bordered align-middle text-center">
+    <table id="absen" class="table table-hover table-bordered align-middle text-center">
         <tr>
-            <th>ID Pegawai</th>
+            <th>Nama Pegawai</th>
             <th>Tanggal</th>
             <th>Status</th>
             <th>Opsi</th>
@@ -20,19 +20,19 @@
         @foreach($absen as $a)
         <tr>
 
-            <td>{{ $a->IDPegawai }}</td>
+            <td>{{ $a->pegawai_nama }}</td>
             <td>{{ $a->Tanggal }}</td>
             <td>{{ $a->Status }}</td>
             <td>
-                <a class="btn btn-success" href="/absen/edit/{{ $a->ID }}">Edit</a>
+                <a class="btn btn-1" href="/absen/edit/{{ $a->ID }}">Edit</a>
                 |
                 <a class="btn btn-danger" href="/absen/hapus/{{ $a->ID }}">Hapus</a>
             </td>
         </tr>
         @endforeach
     </table>
-    <div class="container-sm">
-        <table class="table table-borderless align-middle text-left">
+    <div class="container-fluid">
+        <table class="table table-borderless float-left text-left">
             <tr>
                 <th width="15%">Keterangan Status</th>
                 <th></th>
@@ -59,6 +59,7 @@
                 <td>Alpha</td>
             </tr>
         </table>
+        {{ $absen->links() }}
     </div>
 </div>
 @endsection
