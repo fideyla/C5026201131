@@ -54,15 +54,11 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input type="radio" id="opsi" name="opsi" value="Y" checked="checked">
-                    <label for="tersedia">
-                        Tersedia
-                    </label>
-                    <br>
-                    <input type="radio" id="opsi" name="opsi" value="T">
-                    <label for="tidak">
-                        Tidak Tersedia
-                    </label>
+                    <select name="opsi" id="opsi">
+                        <option selected disabled></option>
+                        <option value="Y">Tersedia</option>
+                        <option value="T">Tidak Tersedia</option>
+                    </select>
                 </td>
             </tr>
             <tr>

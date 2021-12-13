@@ -5,7 +5,7 @@
 
 @section('konten')
 <div id="kotak">
-    <a href="/absen/add"> + Tambah Absensi Pegawai</a>
+    <a href="/absen/add" class="btn btn-primary" role="button"> + Tambah Absensi Pegawai</a>
 
     <br />
     <br />

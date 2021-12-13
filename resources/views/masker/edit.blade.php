@@ -56,15 +56,11 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input type="radio" id="opsi" name="opsi" value="Y" @if ($m->tersedia === "Y" ) checked="checked" @endif>
-                    <label for="tersedia">
-                        Tersedia
-                    </label>
-                    <br>
-                    <input type="radio" id="opsi" name="opsi" value="T" @if ($m->tersedia === "T" ) checked="checked" @endif>
-                    <label for="tidak">
-                        Tidak Tersedia
-                    </label>
+                    <select name="opsi" id="opsi">
+                        <option selected disabled></option>
+                        <option value="Y" @if ($m->tersedia === "Y" ) selected @endif>Tersedia</option>
+                        <option value="T" value="T" @if ($m->tersedia === "T" ) selected @endif>Tidak Tersedia</option>
+                    </select>
                 </td>
             </tr>
             <tr>

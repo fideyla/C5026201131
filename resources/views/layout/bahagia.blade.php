@@ -385,13 +385,19 @@
             width: 100%;
             height: calc(1.5em + 0.75rem + 2px);
             padding: 15px 15px 15px 25px;
-            font-size: 16pt;
+            font-size: 13pt;
             font-weight: 400;
             line-height: 1.5;
             color: #92705E;
             background-clip: padding-box;
-            border: 2px solid black;
+            border: 1px solid black;
             border-radius: 0.25rem;
+        }
+
+        #opsi {
+            display: block;
+            width: 100%;
+            height: 35px;
         }
 
         .input-group-btn.input-space {
@@ -441,7 +447,7 @@
                 </li>
                 <li>
                     <a href="/masker"><i class="fas fa-notes-medical mr-3"></i>
-                        &nbsp Data Masker</a>
+                        &nbsp Praktikum</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-stopwatch mr-3"></i>

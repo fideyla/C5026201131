@@ -7,7 +7,7 @@
 <div id="kotak">
 
     <div class="container-fluid">
-        <a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+        <a href="/pegawai/tambah" class="btn btn-primary" role="button"> + Tambah Pegawai Baru</a>
 
         <br />
         <br />
@@ -25,10 +25,10 @@
 
         <table id="pegawai" class="table table-hover table-bordered align-middle">
             <tr>
-                <th>Nama Pegawai</th>
+                <th width="15%">Nama Pegawai</th>
                 <th>Jabatan</th>
-                <th>Umur</th>
-                <th>Alamat</th>
+                <th width=10%">Umur</th>
+                <th width="25%">Alamat</th>
                 <th>Opsi</th>
             </tr>
             @foreach($pegawai as $p)
