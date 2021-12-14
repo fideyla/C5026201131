@@ -5,11 +5,6 @@
 
 @section('konten')
 <div id="kotak">
-    <a href="/masker"> Kembali</a>
-
-    <br />
-    <br />
-
     @foreach($masker as $m)
     <form action="/masker/update" method="post" class="table-responsive">
         {{ csrf_field() }}
@@ -65,12 +60,7 @@
             </tr>
             <tr>
                 <td>
-                    &nbsp;
-                </td>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
+                    <a href="/masker" class="btn btn-warning" role="button">Kembali</a>
                     <button type="submit" class="btn btn-primary">Simpan Data</button>
                 </td>
             </tr>

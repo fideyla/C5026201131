@@ -5,10 +5,6 @@
 
 @section('konten')
 <div id="kotak">
-
-    <a href="/pegawai"> Kembali</a>
-
-    <br />
     <br />
 
     @foreach($pegawai as $p)
@@ -17,7 +13,7 @@
         <input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br />
         <table class="table table-borderless">
             <tr>
-                <td>
+                <td width="28%">
                     <label for="inputnama">Nama</label>
                 </td>
                 <td>
@@ -62,13 +58,17 @@
             </tr>
             <tr>
                 <td>
-                    &nbsp;
-                </td>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
+                    <a href="/pegawai" class="btn btn-warning" role="button">
+                        Kembali
+                    </a>
                     <button type="submit" class="btn btn-primary">Simpan Data</button>
+
+                </td>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    &nbsp;
                 </td>
             </tr>
         </table>

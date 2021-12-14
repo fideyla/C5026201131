@@ -7,10 +7,10 @@
 <div id="kotak">
 
     <div class="container-fluid">
-        <a href="/pegawai/tambah" class="btn btn-primary" role="button"> + Tambah Pegawai Baru</a>
+        <a href="/pegawai/tambah" class="btn btn-warning" role="button"> + Tambah Pegawai Baru</a>
 
-        <br />
-        <br />
+        <br/>
+        <br/>
 
         <form class="text-center" action="/pegawai/cari" method="GET">
             <div class="form-group">

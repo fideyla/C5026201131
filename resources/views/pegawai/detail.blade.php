@@ -5,12 +5,6 @@
 
 @section('konten')
 <div id="kotak">
-
-    <a href="/pegawai"> Kembali</a>
-
-    <br />
-    <br />
-
     @foreach($pegawai as $p)
 
     <table class="table table-borderless">
@@ -22,7 +16,7 @@
                 <label>:</label>
             </td>
             <td>
-                <div class="container form-control">  {{ $p->pegawai_nama }} </div>
+                <div class="container form-control"> {{ $p->pegawai_nama }} </div>
             </td>
         </tr>
         <tr>
@@ -33,7 +27,7 @@
                 <label>:</label>
             </td>
             <td>
-                <div class="container form-control" > {{ $p->pegawai_jabatan }} </div>
+                <div class="container form-control"> {{ $p->pegawai_jabatan }} </div>
             </td>
         </tr>
         <tr>
@@ -56,6 +50,11 @@
             </td>
             <td>
                 <div class="container form-control"> {{ $p->pegawai_alamat }} </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/pegawai" class="btn btn-warning" role="button"> Kembali</a>
             </td>
         </tr>
     </table>

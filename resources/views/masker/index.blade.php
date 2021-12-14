@@ -7,7 +7,7 @@
 <div id="kotak">
 
     <div class="container-fluid">
-        <a href="/masker/tambah" class="btn btn-primary" role="button"> + Tambah Masker Baru</a>
+        <a href="/masker/tambah" class="btn btn-warning" role="button"> + Tambah Masker Baru</a>
 
         <br />
         <br />

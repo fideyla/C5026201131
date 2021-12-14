@@ -5,10 +5,6 @@
 
 @section('konten')
 <div id="kotak">
-    <a href="/masker"> Kembali</a>
-
-    <br />
-    <br />
 
     @foreach($masker as $m)
     <form action="/masker/update" method="post" class="table-responsive">
@@ -65,6 +61,11 @@
                     <label for="tidak">
                         Tidak Tersedia
                     </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/masker" class="btn btn-warning" role="button">Kembali</a>
                 </td>
             </tr>
         </table>

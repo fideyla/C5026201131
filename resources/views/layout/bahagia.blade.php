@@ -356,6 +356,12 @@
             transition: all 0.3s;
         }
 
+        .btn.btn-warning {
+            background: #696969;
+            border-color: #696969;
+            color: white;
+        }
+
         .btn.btn-1 {
             background: #92705E;
             border-color: #92705E;

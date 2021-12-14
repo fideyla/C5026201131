@@ -12,7 +12,7 @@
         <table class="table table-borderless">
             <tr>
                 <input type="hidden" name="id" value="{{ $a->ID }}">
-                <td>
+                <td width="30%">
                     <label for="idpegawai">ID Pegawai</label>
                 </td>
                 <td>
@@ -74,6 +74,9 @@
             </tr>
             <tr>
                 <td>
+                    <a href="/absen" class="btn btn-warning" role="button">
+                        Kembali
+                    </a>
                     <button type="submit" class="btn btn-primary">Simpan Data</button>
                 </td>
                 <td>
@@ -82,13 +85,6 @@
                 <td>
                     &nbsp;
                 </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="/absen">
-                        Kembali
-                    </a>
-                <td>
             </tr>
         </table>
     </form>

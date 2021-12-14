@@ -5,16 +5,12 @@
 
 @section('konten')
 <div id="kotak">
-    <a href="/masker"> Kembali</a>
-
-    <br />
-    <br />
 
     <form action="/masker/store" method="post" class="table-responsive">
         {{ csrf_field() }}
         <table class="table table-borderless">
             <tr>
-                <td>
+                <td width="28%">
                     <label for=inputkode">Kode</label>
                 </td>
                 <td>
@@ -63,6 +59,7 @@
             </tr>
             <tr>
                 <td>
+                    <a href="/masker" class="btn btn-warning" role="button">Kembali</a>
                     <button type="submit" class="btn btn-primary">Simpan Data</button>
                 </td>
             </tr>
