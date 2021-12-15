@@ -53,7 +53,7 @@
                     <label>:</label>
                 </td>
                 <td>
-                    <input class="container form-control" name="Gaji" id="Gaji" type="number" required="required" value="{{ number_format($k->Gaji, 0, ',', '.') }}">
+                    <input class="container form-control" name="Gaji" id="Gaji" type="number" required="required" value="{{$k->Gaji}}">
                 </td>
             </tr>
             <tr>
