@@ -456,8 +456,8 @@
                         &nbsp Praktikum</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-stopwatch mr-3"></i>
-                        </span>&nbsp Minggu Depan</a>
+                    <a href="/karyawan1"><i class="fas fa-stopwatch mr-3"></i>
+                        </span>&nbsp EAS</a>
                 </li>
             </ul>
 

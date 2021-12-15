@@ -52,3 +52,11 @@ Route::post('/masker/update','MaskerController@update');
 Route::get('/masker/hapus/{id}','MaskerController@hapus');
 Route::get('/masker/view/{id}','MaskerController@detail');
 Route::get('/masker/cari','MaskerController@cari');
+
+//route CRUD karyawan1
+Route::get('/karyawan1','Karyawan1Controller@index');
+Route::get('/karyawan1/tambah','Karyawan1Controller@tambah');
+Route::post('/karyawan1/store','Karyawan1Controller@store');
+Route::get('/karyawan1/edit/{id}','Karyawan1Controller@edit');
+Route::post('/karyawan1/update','Karyawan1Controller@update');
+Route::get('/karyawan1/view/{id}','Karyawan1Controller@detail');
